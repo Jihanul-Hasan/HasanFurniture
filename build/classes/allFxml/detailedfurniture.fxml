@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.DetailedFurnitureController">
+   <children>
+      <TilePane layoutX="228.0" layoutY="122.0" prefHeight="567.0" prefWidth="1054.0">
+         <children>
+            <ScrollPane hbarPolicy="ALWAYS" hvalue="0.39" prefHeight="556.0" prefWidth="1048.0" stylesheets="@../Style/scrollpane.css" vbarPolicy="ALWAYS" vvalue="0.28">
+               <padding>
+                  <Insets top="-100.0" />
+               </padding>
+               <content>
+                  <AnchorPane prefHeight="699.0" prefWidth="830.0">
+                     <children>
+                        <VBox layoutX="32.0" layoutY="443.0" prefHeight="108.0" prefWidth="757.0">
+                           <children>
+                              <Button fx:id="addToCartFx" mnemonicParsing="false" onAction="#addtocart" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #E95231;" styleClass="add-btn" stylesheets="@../Style/button.css" text="Add To Cart" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="400.0" top="20.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Label text="Rate This Product:">
+                                 <VBox.margin>
+                                    <Insets left="25.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Slider fx:id="Slider" prefHeight="10.0" prefWidth="581.0">
+                                 <VBox.margin>
+                                    <Insets left="140.0" right="450.0" top="-15.0" />
+                                 </VBox.margin>
+                              </Slider>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="629.0" layoutY="106.0" prefHeight="443.0" prefWidth="166.0" style="-fx-background-color: #EFEEFE;" />
+                        <ImageView fx:id="img" fitHeight="317.0" fitWidth="541.0" layoutX="51.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name" layoutX="124.0" layoutY="465.0" prefHeight="43.0" prefWidth="141.0" text="Label">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label fx:id="price" layoutX="293.0" layoutY="466.0" prefHeight="43.0" prefWidth="168.0" text="Label">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label fx:id="color" alignment="CENTER" layoutX="706.0" layoutY="207.0" prefHeight="20.0" prefWidth="62.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="dateofmanufacture" layoutX="639.0" layoutY="366.0" prefHeight="35.0" prefWidth="162.0" text="Label">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="644.0" layoutY="208.0" text="Color :">
+                           <font>
+                              <Font name="Californian FB Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="631.0" layoutY="323.0" prefHeight="24.0" prefWidth="153.0" text="Manufacture Date :">
+                           <font>
+                              <Font name="Californian FB Bold" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="477.0" text="Name: ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="226.0" layoutY="478.0" text="Price:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="54.0" layoutY="551.0" prefHeight="241.0" prefWidth="739.0">
+                           <content>
+                              <VBox fx:id="vBoxConTainingComents" prefHeight="210.0" prefWidth="329.0">
+                                 <children>
+                                    <TextField fx:id="comment" prefHeight="31.0" prefWidth="254.0" promptText="Add Comment" styleClass="decrement-button" stylesheets="@../Style/textfield2.css">
+                                       <VBox.margin>
+                                          <Insets bottom="4.0" left="10.0" right="65.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" onAction="#commentWriting" prefHeight="25.0" prefWidth="30.0" styleClass="add-btn" stylesheets="@../Style/button.css">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="270.0" right="5.0" top="-30.0" />
+                                       </VBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="26.0">
+                                             <image>
+                                                <Image url="@../Photos/icons/dsd.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets top="-30.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </TilePane>
+      <VBox prefHeight="78.0" prefWidth="1279.0" style="-fx-background-color: #0B2043;">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="324.0" nodeOrientation="INHERIT" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Photos/loginscenephoto2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="500.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="-1.0" layoutY="79.0" prefHeight="43.0" prefWidth="1279.0">
+         <children>
+            <VBox prefHeight="44.0" prefWidth="1016.0">
+               <children>
+                  <MenuBar fx:id="menubar" prefHeight="57.0" prefWidth="1283.0" stylesheets="@../Style/menu.css">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="Leaving">
+                           <items>
+                              <Menu mnemonicParsing="false" text="Sofa">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Fabric" />
+                                    <MenuItem mnemonicParsing="false" text="Leather" />
+                                    <MenuItem mnemonicParsing="false" text="Wooden" />
+                                 </items>
+                              </Menu>
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Bedroom" />
+                        <Menu mnemonicParsing="false" text="Dining" />
+                        <Menu mnemonicParsing="false" text="kitchen" />
+                        <Menu mnemonicParsing="false" text="Kids Room" />
+                        <Menu mnemonicParsing="false" text="Smart Fit" />
+                        <Menu mnemonicParsing="false" text="Door " />
+                        <Menu mnemonicParsing="false" text="Office" />
+                     </menus>
+                  </MenuBar>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="42.0" prefWidth="54.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="back">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="1200.0" right="20.0" top="-30.0" />
+               </VBox.margin>
+            </Button>
+            <TextField prefHeight="25.0" prefWidth="241.0" promptText="Search" styleClass="text-field" stylesheets="@../Style/textfield2.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="930.0" right="100.0" top="-35.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="-1.0" layoutY="131.0" prefHeight="543.0" prefWidth="204.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox prefHeight="70.0" prefWidth="172.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="208.0" text="Popular Furniture By Choice">
+                     <font>
+                        <Font name="Gloucester MT Extra Condensed" size="23.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="198.0" text="Categories our customers love to check out.">
+                     <font>
+                        <Font name="Eras Light ITC" size="10.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <GridPane prefHeight="437.0" prefWidth="204.0" stylesheets="@../Style/gridHover.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="90.0" minHeight="50.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fx:id="pbc1" accessibleRole="BUTTON" styleClass="grid">
+                     <image>
+                        <Image url="@../Photos/POC/1.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../Photos/POC/2.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../Photos/POC/3.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../Photos/POC/4.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../Photos/POC/5.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../Photos/POC/6.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../Photos/POC/7.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../Photos/POC/8.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../Photos/POC/9.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView styleClass="grid" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../Photos/POC/11.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" text="Chair">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Table" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Open Shelves" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="17.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Divan" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="78.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Tv Cabnet" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Center Tbale" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Label" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Door" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Reading Table" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="More.." GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="27.0" top="80.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#211a5726" radius="9.01" spread="0.59" width="17.04" />
+         </effect>
+      </VBox>
+      <VBox prefHeight="67.0" prefWidth="1276.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="129.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Nearby Shoowroom">
+               <VBox.margin>
+                  <Insets left="1030.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Label prefHeight="20.0" prefWidth="82.0" text="Welcome Home" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="620.0" top="-3.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Brush Script MT Italic" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="1040.0" layoutY="40.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="92.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Logout">
+               <VBox.margin>
+                  <Insets left="1170.0" top="-43.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

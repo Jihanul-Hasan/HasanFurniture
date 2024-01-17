@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.ITScene2Controller">
+   <top>
+      <VBox prefHeight="43.0" prefWidth="623.0" style="-fx-background-color: #292D32;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../Photos/loginscenephoto2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="230.0" top="7.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="321.0" prefWidth="136.0" style="-fx-background-color: #42566F;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow height="0.0" radius="3.7625" spread="0.41" width="17.05" />
+         </effect>
+         <children>
+            <VBox prefHeight="32.0" prefWidth="117.0" />
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#adduser" prefHeight="37.0" prefWidth="103.0" styleClass="rich-blue" stylesheets="@../Style/rich-blue-button.css" text="Add user Manually" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <VBox prefHeight="39.0" prefWidth="117.0" />
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#adduser" prefHeight="37.0" prefWidth="103.0" styleClass="rich-blue" stylesheets="@../Style/rich-blue-button.css" text="User Complains" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <VBox prefHeight="39.0" prefWidth="117.0" />
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#adduser" prefHeight="37.0" prefWidth="104.0" styleClass="rich-blue" stylesheets="@../Style/rich-blue-button.css" text="System Bugs" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <VBox prefHeight="38.0" prefWidth="117.0" />
+            <Button fx:id="showallusers" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#showallusersonclick" prefHeight="37.0" prefWidth="106.0" styleClass="rich-blue" stylesheets="@../Style/rich-blue-button.css" text="Show All Users" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <VBox prefHeight="37.0" prefWidth="136.0" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" styleClass="rich-blue" stylesheets="@../Style/rich-blue-button.css" text="Report">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <VBox prefHeight="42.0" prefWidth="623.0" style="-fx-background-color: #EFEEFE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="88.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Back">
+               <VBox.margin>
+                  <Insets left="645.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="487.0" />
+            <BorderPane fx:id="itscene" prefHeight="295.0" prefWidth="487.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

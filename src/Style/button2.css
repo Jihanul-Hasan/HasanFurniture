@@ -1,0 +1,9 @@
+.custom-button {
+    -fx-font: 16px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}
+.custom-button:hover {
+-fx-background-color: #7F8C9D;
+ -fx-text-fill: white;
+}

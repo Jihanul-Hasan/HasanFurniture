@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.IT4ShowAllUsersController">
+   <top>
+      <VBox prefHeight="53.0" prefWidth="649.0" style="-fx-background-color: #292D32;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../Photos/loginscenephoto2.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="240.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="424.0" prefWidth="654.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="34.0" prefWidth="543.0" style="-fx-background-color: White;">
+               <children>
+                  <MenuBar prefHeight="38.0" prefWidth="645.0" styleClass="context-menu" stylesheets="@../Style/menu.css">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Delete" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                     <padding>
+                        <Insets top="-6.0" />
+                     </padding>
+                  </MenuBar>
+               </children>
+            </VBox>
+            <BorderPane fx:id="itscene" prefHeight="443.0" prefWidth="659.0" style="-fx-background-color: #42566F;">
+               <top>
+                  <VBox prefHeight="43.0" prefWidth="592.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ButtonBar onMouseClicked="#nothing" prefHeight="40.0" prefWidth="638.0" stylesheets="@../Style/button.css">
+                           <buttons>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#showallcus" styleClass="add-btn" stylesheets="@../Style/button.css" text="Customers">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#showallbm" prefHeight="23.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Branch Managers" />
+                              <Button mnemonicParsing="false" onAction="#showallfm" prefHeight="23.0" prefWidth="125.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Factory Managers" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#showallit" styleClass="add-btn" stylesheets="@../Style/button.css" text="IT department" />
+                              <Button minWidth="51.0" mnemonicParsing="false" onAction="#showallsup" prefHeight="23.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Suplliers" />
+                           </buttons>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </ButtonBar>
+                     </children>
+                  </VBox>
+               </top>
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#BackOnClick" prefHeight="25.0" prefWidth="82.0" text="Back" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" left="550.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

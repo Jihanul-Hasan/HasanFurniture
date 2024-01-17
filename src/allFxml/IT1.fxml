@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.ITScene1Controller">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="34.0" prefWidth="543.0" style="-fx-background-color: White;">
+               <children>
+                  <MenuBar prefHeight="10.0" prefWidth="543.0" styleClass="context-menu" stylesheets="@../Style/menu.css">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                     <padding>
+                        <Insets top="-6.0" />
+                     </padding>
+                  </MenuBar>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="347.0" prefWidth="115.0" style="-fx-background-color: #42566F;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="35.0" prefWidth="100.0" />
+            <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#User" prefHeight="25.0" prefWidth="112.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="User" />
+            <VBox layoutX="10.0" layoutY="95.0" prefHeight="35.0" prefWidth="100.0" />
+            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" onAction="#GoToMsgSceneOnClick" prefHeight="25.0" prefWidth="112.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Message" />
+            <VBox prefHeight="35.0" prefWidth="100.0" />
+            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Button" />
+            <VBox layoutX="10.0" layoutY="130.0" prefHeight="42.0" prefWidth="100.0" />
+            <Button alignment="CENTER" contentDisplay="BOTTOM" layoutX="10.0" layoutY="95.0" mnemonicParsing="false" onAction="#updateFurniture" prefHeight="25.0" prefWidth="112.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Update Furniture" />
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="3.76" spread="0.41" width="17.04" />
+         </effect>
+      </VBox>
+   </left>
+   <top>
+      <VBox prefHeight="53.0" prefWidth="643.0" style="-fx-background-color: #292D32;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../Photos/loginscenephoto2.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="240.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="69.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Log Out">
+               <VBox.margin>
+                  <Insets left="550.0" top="-30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,5 @@
+
+
+.my-button:hover {
+    -fx-graphic: url("/Photos/POC/1-Copy.png");
+}

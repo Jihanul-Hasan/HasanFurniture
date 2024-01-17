@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="489.0" stylesheets="@../Style/tableview.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.BranchManagerTableController">
+   <center>
+      <TableView fx:id="userstable" prefHeight="404.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="useremailcol" prefWidth="168.0" text="User Email" />
+          <TableColumn fx:id="userpasswordcol" prefWidth="149.0" text="Passwords" />
+            <TableColumn fx:id="dojcol" prefWidth="176.0" text="DOJ" />
+        </columns>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

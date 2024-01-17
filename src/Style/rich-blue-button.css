@@ -1,0 +1,19 @@
+.rich-blue {
+    
+        linear-gradient(#7ebcea, #FFFFFF),
+        linear-gradient(#FFFFFF, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 50;
+    -fx-padding: 10 10 10 10;
+    -fx-text-fill: black;
+   -fx-font-family: "Times New Roman";  
+    -fx-font-size: 10px;
+}
+
+.rich-blue:hover {
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 5, 0.0 , 0 , 1 );
+-fx-background-color: #7F8C9D;
+ -fx-text-fill: white;
+}
+.rich-blue { -fx-focus-color: transparent; }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="301.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.FurnitureViewController">
+   <children>
+      <ImageView fx:id="imgV" fitHeight="232.0" fitWidth="345.0" layoutX="24.0" layoutY="14.0" onMousePressed="#viewproduct" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="253.0" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #DBDDE2;" text="Label">
+         <font>
+            <Font name="Sitka Subheading" size="17.0" />
+         </font></Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="188.0" layoutY="253.0" prefHeight="34.0" prefWidth="138.0" style="-fx-background-color: #DBDDE2;" text="Label">
+         <font>
+            <Font name="Sitka Heading" size="17.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

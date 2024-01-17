@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.BranchManagerReport2Controller">
+   <children>
+      <VBox prefHeight="67.0" prefWidth="659.0" style="-fx-background-color: #42566F;">
+         <effect>
+            <DropShadow spread="0.31" />
+         </effect>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Show Reports">
+               <VBox.margin>
+                  <Insets left="500.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <RadioButton fx:id="p" mnemonicParsing="false" onAction="#profit" prefHeight="17.0" prefWidth="146.0" text="profit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="70.0" top="-20.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="i" mnemonicParsing="false" onAction="#itemsold" prefHeight="17.0" prefWidth="146.0" text="Item sold" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" top="-20.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <BorderPane fx:id="borderpane" layoutX="-1.0" layoutY="84.0" prefHeight="398.0" prefWidth="659.0" />
+   </children>
+</AnchorPane>

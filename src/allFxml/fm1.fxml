@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="1258.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hasanfurniture.FactoryManagerScene1Controller">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="75.0" prefWidth="1270.0" style="-fx-background-color: #0B2043;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="200.0">
+               <image>
+                  <Image url="@../Photos/loginscenephoto2.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="500.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Circle fx:id="avatar" fill="DODGERBLUE" radius="26.0" stroke="BLACK" strokeType="INSIDE">
+               <VBox.margin>
+                  <Insets left="1200.0" top="-50.0" />
+               </VBox.margin>
+            </Circle>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" styleClass="add-btn" stylesheets="@../Style/button.css" text="Log out">
+               <VBox.margin>
+                  <Insets left="1090.0" top="-36.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="1.0" layoutY="86.0" prefHeight="599.0" prefWidth="180.0" style="-fx-background-color: #5B656B;">
+         <children>
+            <VBox prefHeight="50.0" prefWidth="171.0" />
+            <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" onAction="#emailandmsg" prefHeight="32.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Emails and Messages">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <VBox prefHeight="60.0" prefWidth="150.0" />
+            <VBox prefHeight="45.0" prefWidth="156.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" onAction="#workallocate" prefHeight="32.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Work Allocation">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="60.0" prefWidth="150.0" />
+            <VBox prefHeight="55.0" prefWidth="156.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" onAction="#meetings" prefHeight="32.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Meetings">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="180.0" />
+            <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" onAction="#reports" prefHeight="32.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Reports">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </Button>
+            <VBox prefHeight="60.0" prefWidth="150.0" />
+            <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" onAction="#customerreviews" prefHeight="32.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../Style/darkBlueButton.css" text="Order Materials">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#000000bc" spread="0.76" />
+         </effect>
+      </VBox>
+      <VBox layoutX="855.0" layoutY="123.0" prefHeight="286.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <HBox prefHeight="57.0" prefWidth="375.0" style="-fx-background-color: #42566F;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="28.0" prefWidth="65.0" text="cctv" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="17.0" prefWidth="411.0" />
+            <MediaView fx:id="mediaview" fitHeight="250.0" fitWidth="400.0">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </MediaView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <VBox layoutX="271.0" layoutY="87.0" prefHeight="92.0" prefWidth="363.0" />
+      <VBox layoutX="277.0" layoutY="310.0" prefHeight="286.0" prefWidth="453.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 50;
+    -fx-font-family: "Arial";
+}
+
+.add-btn:hover {
+-fx-background-color: #7F8C9D;
+ -fx-text-fill: white;
+
+}
+
